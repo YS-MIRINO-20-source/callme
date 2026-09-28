@@ -1,6 +1,6 @@
-/* 1. Mengatur dasar halaman agar pas di semua layar HP */
+
 body {
-  /* Diubah dari hitam polos menjadi gradasi gelap premium */
+
   background: linear-gradient(135deg, #0f0f14 0%, #151522 50%, #0b0b0e 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -15,10 +15,9 @@ body {
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-  transition: background 0.6s ease-in-out; /* Transisi dibuat sedikit lebih lambat agar mulus */
+  transition: background 0.6s ease-in-out;
 }
 
-/* 2. Styling Foto Profil Lingkaran */
 .profile-img {
   width: 100px;
   height: 100px;
@@ -30,7 +29,6 @@ body {
   z-index: 2;
 }
 
-/* 3. Styling untuk Judul Utama */
 h1 {
   color: #ffffff;
   font-size: 2rem;
@@ -41,35 +39,33 @@ h1 {
   z-index: 2;
 }
 
-/* 4. Tombol Kaca Transparan (Glassmorphism) */
 .btn-link {
   display: block;
   width: 100%;
-  max-width: 280px; /* Diperkecil sedikit agar pas di HP ramping */
+  max-width: 280px;
   padding: 14px 20px;
   margin: 10px 0;
-  background: rgba(255, 255, 255, 0.05); /* Sedikit lebih transparan */
+  background: rgba(255, 255, 255, 0.05);
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  backdrop-filter: blur(12px); /* Efek blur kaca diperkuat */
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   z-index: 2;
   opacity: 0;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek memantul saat ditekan */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 5. Efek Warna Cerah Saat Di-hover / Di-sentuh */
 .btn-instagram:hover, .btn-instagram:active {
   background: #ff006a;
   border-color: #ff006a;
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(255, 0, 106, 0.6); /* Efek menyala neon */
+  box-shadow: 0 0 20px rgba(255, 0, 106, 0.6);
 }
 
 .btn-facebook:hover, .btn-facebook:active {
@@ -86,7 +82,6 @@ h1 {
   box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
 }
 
-/* 6. Animasi Memantul Masuk */
 @keyframes bounceIn {
   0% { opacity: 0; transform: translateY(15px) scale(0.95); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
