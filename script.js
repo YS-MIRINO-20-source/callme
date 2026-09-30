@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('.btn-link');
 const body = document.body;
 
 
-const defaultBg = "linear-gradient(135deg, #0f0f14 0%, #151522 50%, #0b0b0e 100%)";
+const defaultBg = "linear-gradient(135deg,  #0e0e13 0%, #373788 50%, #1e851e 100%)";
 
 buttons.forEach(button => {
 
